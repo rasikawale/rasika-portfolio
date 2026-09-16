@@ -132,6 +132,7 @@ const education = [
     period: 'Jun 2022 – May 2023',
     coursework: ['Physics', 'Chemistry', 'Mathematics', 'Computer Science', 'Scientific Problem Solving'],
   },
+  
 ]
 
 const certifications = [
@@ -142,16 +143,28 @@ const certifications = [
     file: '/certificates/NEXT.pdf'
   },
   {
-    name: 'LeetCode and HackerRank Problem Solving',
-    provider: 'Coding Platforms',
+    name: 'Design and Build the TaskBot',
+    provider: 'INfosys Springboard',
     year: '2025',
-    file: '/certificates/problem-solving.pdf'
+    file: '/certificates/TASK.pdf'
   },
   {
     name: 'GenAI Job Simulation Program',
     provider: 'Forage',
     year: '2025',
-    file: '/certificates/forage-genai.pdf'
+    file: '/certificates/data analytics.pdf'
+  },
+  {
+    name: 'Introduction to the Line Finder and Ultrasonic Sensor',
+    provider: 'Infosys Springboard',
+    year: '2025',
+    file: '/certificates/sensor.pdf'
+  },
+  {
+    name: 'Mini Challenge-Garbage Moving Robot',
+    provider: 'Infosys Springboard',
+    year: '2025',
+    file: '/certificates/mini.pdf'
   }
 ];
 function App() {
@@ -194,9 +207,11 @@ function App() {
       <header className="topbar">
         <div className="topbar-inner">
           <a href="#home" className="brand-wrap" aria-label="Home">
-            <span className="brand-badge">RW</span>
-            <span className="brand-text">RASIKAHOME</span>
-          </a>
+  <span className="brand-badge">
+    <img src="/profile.jpeg" alt="Rasika Wale" />
+  </span>
+  <span className="brand-text">RASIKA</span>
+</a>
 
           <nav className="desktop-nav">
             {navigation.map((item) => (

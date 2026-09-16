@@ -245,6 +245,7 @@ function App() {
         <section id="home" className="hero-section section-shell">
           <div className="hero-inner reveal">
             <div className="hero-copy">
+              <p className="eyebrow">software DEVELOPER</p>
               <p className="eyebrow">AI / ML DEVELOPER</p>
               <h1>
                 <span>Rasika</span>
@@ -324,7 +325,7 @@ function App() {
                   </div>
                   <div className="project-actions">
                     <a href={project.github} target="_blank" rel="noreferrer"><Globe size={16} /> GitHub</a>
-                    <a href={project.demo} target="_blank" rel="noreferrer" className="primary"><ExternalLink size={16} /> Live Demo</a>
+                    {/* <a href={project.demo} target="_blank" rel="noreferrer" className="primary"><ExternalLink size={16} /> Live Demo</a> */}
                   </div>
                 </article>
               ))}

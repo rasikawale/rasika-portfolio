@@ -121,6 +121,18 @@ const timelineItems = [
 
 const education = [
   {
+  degree: 'M.Sc. Computer Science',
+  college: 'Your College Name, Pune, India',
+  period: '2026 – Present',
+  coursework: [
+    'MongoDB',
+    'DAA (Design and Analysis of Algorithms)',
+    'Artificial Intelligence',
+    'Data Analytics',
+    'Advanced Programming'
+  ],
+},
+  {
     degree: 'Bachelor of Computer Science (BCS)',
     college: 'Sangamner College, Sangamner, India',
     period: 'Jun 2023 – May 2026',
@@ -146,7 +158,7 @@ const certifications = [
    {
     name: 'SRH-Student Research competition',
     provider: 'Sangamner College',
-    year: '2025',
+    year: '2026',
     file: '/certificates/SRH.pdf'
   },
   {
@@ -161,6 +173,12 @@ const certifications = [
     year: '2025',
     file: '/certificates/TASK.pdf'
   },
+  {
+  name: 'Magic Bus Youth Employability & Digital Skills Program',
+  provider: 'Magic Bus India Foundation – in collaboration with Infosys Springboard',
+  year: '2026',
+  file: '/certificates/Magic.pdf'
+},
   {
     name: 'GenAI Job Simulation Program',
     provider: 'Forage',
@@ -260,9 +278,12 @@ function App() {
             <div className="hero-copy">
               <p className="eyebrow">software DEVELOPER</p>
               <p className="eyebrow">AI / ML DEVELOPER</p>
-              <h1>
-                <span>Rasika</span>
-                <span>Arvind</span>
+             
+              
+                  <h1>
+                <span>Rasika </span>
+               
+                <span>Arvind </span>
                 <span className="accent">Wale</span>
               </h1>
               <p className="subtitle">{profile.intro}</p>
@@ -291,7 +312,7 @@ function App() {
               </div>
 
               <div className="stats-grid">
-                <StatCard icon={GraduationCap} label="Current" value="Computer Engineering" />
+                <StatCard icon={GraduationCap} label="Current" value="Computer Science" />
                 <StatCard icon={BrainCircuit} label="Interests" value="AI, ML, Python,PHP,JAVA " />
                 <StatCard icon={Briefcase} label="Goal" value="Build products" />
               </div>

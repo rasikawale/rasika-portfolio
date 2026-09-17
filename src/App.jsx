@@ -50,12 +50,12 @@ const skillGroups = [
   {
     title: 'Programming',
     icon: Code2,
-    items: ['Python', 'SQL', 'Core Java', 'Advanced Java', 'Data Structures'],
+    items: ['Python', 'SQL', 'Core Java', 'Advanced Java', 'Data Structures','C','C++'],
   },
   {
     title: 'AI / ML',
     icon: BrainCircuit,
-    items: ['Machine Learning', 'AI Integration', 'Model Optimization', 'Model Deployment', 'Data Processing Pipelines'],
+    items: ['Machine Learning', 'AI Integration', 'Model Optimization', 'Model Deployment', 'TensorFlow'],
   },
   {
     title: 'Technologies',
@@ -65,7 +65,7 @@ const skillGroups = [
   {
     title: 'Web Development',
     icon: Sparkles,
-    items: ['HTML', 'CSS', 'JavaScript', 'Laravel', 'PHP', 'Bootstrap'],
+    items: ['HTML', 'CSS', 'JavaScript', 'Laravel', 'PHP', 'Bootstrap','Tailwind CSS'],
   },
 ]
 
@@ -124,18 +124,31 @@ const education = [
     degree: 'Bachelor of Computer Science (BCS)',
     college: 'Sangamner College, Sangamner, India',
     period: 'Jun 2023 – May 2026',
-    coursework: ['Data Structures', 'Object-Oriented Programming', 'Machine Learning', 'Database Management Systems', 'Web Development', 'AI Integration'],
+    coursework: ['Data Structures', 'Object-Oriented Programming', 'Machine Learning', 'Database Management Systems', 'Web Development', 'AI Integration','Software Development'],
   },
   {
     degree: 'HSC - Science',
     college: 'Shramik Junior College, Sangamner, India',
     period: 'Jun 2022 – May 2023',
-    coursework: ['Physics', 'Chemistry', 'Mathematics', 'Computer Science', 'Scientific Problem Solving'],
+    coursework: ['Physics', 'Chemistry', 'Mathematics', 'Health and Physical Education'],
+  },
+  {
+    degree: 'SSC',
+    college: 'Malpani vidhyalaya, Sangamner, India',
+    period: 'Jun 2020 – May 2021',
+    coursework: ['MATHS', 'SCIENCE', 'ENGLISH', 'SANSRKIT', 'MARATHI'],
   },
   
 ]
 
 const certifications = [
+
+   {
+    name: 'SRH-Student Research competition',
+    provider: 'Sangamner College',
+    year: '2025',
+    file: '/certificates/SRH.pdf'
+  },
   {
     name: 'NxtWave Workshop - Build Own Generative AI Model',
     provider: 'NxtWave',

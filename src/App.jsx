@@ -4,8 +4,6 @@ import {
   BrainCircuit,
   Briefcase,
   BriefcaseBusiness,
-  Code2,
-  Cpu,
   Download,
   ExternalLink,
   FileText,
@@ -13,27 +11,19 @@ import {
   GraduationCap,
   Mail,
   Menu,
-  Send,
-  Sparkles,
   X,
 } from 'lucide-react'
 import './App.css'
 
-
-
-
-
-
 const profile = {
-  name: 'Rasika Arvind Wale',
-  title: 'Computer Science Student | AI/ML Enthusiast | Python Developer',
-  intro:
-    'I build practical, real-world solutions using AI, Machine Learning, data analytics and modern software technologies.',
+  name: 'Rasika Wale',
+  title: 'Data Analyst | Software Developer',
+  intro: 'Turning data into insights and ideas into applications.',
   email: 'rasika.wale05@gmail.com',
-github: 'https://github.com/',
-linkedin: 'https://www.linkedin.com/in/rasika-wale-3930452b5',
-resume: '/resume.pdf',
-resumeViewer: '/resume-viewer.html',
+  github: 'https://github.com/',
+  linkedin: 'https://www.linkedin.com/in/rasika-wale-3930452b5',
+  resume: '/resume.pdf',
+  resumeViewer: '/resume-viewer.html',
 }
 
 const navigation = [
@@ -41,32 +31,18 @@ const navigation = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Education', href: '#education' },
+  { label: 'Certifications', href: '#certifications' },
   { label: 'Contact', href: '#contact' },
 ]
 
-const skillGroups = [
-  {
-    title: 'Programming',
-    icon: Code2,
-    items: ['Python', 'SQL', 'Core Java', 'Advanced Java', 'Data Structures','C','C++'],
-  },
-  {
-    title: 'AI / ML',
-    icon: BrainCircuit,
-    items: ['Machine Learning', 'AI Integration', 'Model Optimization', 'Model Deployment', 'TensorFlow'],
-  },
-  {
-    title: 'Technologies',
-    icon: Cpu,
-    items: ['VS Code', 'GitHub', 'MySQL', 'PostgreSQL', 'AI/ML Tools'],
-  },
-  {
-    title: 'Web Development',
-    icon: Sparkles,
-    items: ['HTML', 'CSS', 'JavaScript', 'Laravel', 'PHP', 'Bootstrap','Tailwind CSS'],
-  },
+const skillUniverse = [
+  { name: 'Python', value: 'Python', description: 'Python powers analysis, automation, and intelligent applications.', x: '28%', y: '38%' },
+  { name: 'SQL / PostgreSQL', value: 'SQL', description: 'Structured querying for clean, reliable data workflows.', x: '50%', y: '16%' },
+  { name: 'Excel', value: 'Excel', description: 'Fast data cleaning, analysis, and reporting workflows.', x: '72%', y: '38%' },
+  { name: 'Power BI', value: 'Power BI', description: 'Interactive dashboards that turn data into decisions.', x: '18%', y: '66%' },
+  { name: 'Pandas & NumPy', value: 'Pandas', description: 'Practical data manipulation and numerical analysis.', x: '62%', y: '74%' },
+  { name: 'PHP / Laravel', value: 'Laravel', description: 'Modern backend development and product-ready web apps.', x: '82%', y: '64%' },
+  { name: 'HTML / CSS / JavaScript', value: 'Web', description: 'Responsive interfaces and modern user experiences.', x: '46%', y: '82%' },
 ]
 
 const projects = [
@@ -121,22 +97,16 @@ const timelineItems = [
 
 const education = [
   {
-  degree: 'M.Sc. Computer Science',
-  college: 'Your College Name, Pune, India',
-  period: '2026 – Present',
-  coursework: [
-    'MongoDB',
-    'DAA (Design and Analysis of Algorithms)',
-    'Artificial Intelligence',
-    'Data Analytics',
-    'Advanced Programming'
-  ],
-},
+    degree: 'M.Sc. Computer Science',
+    college: 'Your College Name, Pune, India',
+    period: '2026 – Present',
+    coursework: ['MongoDB', 'DAA (Design and Analysis of Algorithms)', 'Artificial Intelligence', 'Data Analytics', 'Advanced Programming'],
+  },
   {
     degree: 'Bachelor of Computer Science (BCS)',
     college: 'Sangamner College, Sangamner, India',
     period: 'Jun 2023 – May 2026',
-    coursework: ['Data Structures', 'Object-Oriented Programming', 'Machine Learning', 'Database Management Systems', 'Web Development', 'AI Integration','Software Development'],
+    coursework: ['Data Structures', 'Object-Oriented Programming', 'Machine Learning', 'Database Management Systems', 'Web Development', 'AI Integration', 'Software Development'],
   },
   {
     degree: 'HSC - Science',
@@ -150,54 +120,53 @@ const education = [
     period: 'Jun 2020 – May 2021',
     coursework: ['MATHS', 'SCIENCE', 'ENGLISH', 'SANSRKIT', 'MARATHI'],
   },
-  
 ]
 
 const certifications = [
-
-   {
+  {
     name: 'SRH-Student Research competition',
     provider: 'Sangamner College',
     year: '2026',
-    file: '/certificates/SRH.pdf'
+    file: '/certificates/SRH.pdf',
   },
   {
     name: 'NxtWave Workshop - Build Own Generative AI Model',
     provider: 'NxtWave',
     year: '2025',
-    file: '/certificates/NEXT.pdf'
+    file: '/certificates/NEXT.pdf',
   },
   {
     name: 'Design and Build the TaskBot',
-    provider: 'INfosys Springboard',
+    provider: 'Infosys Springboard',
     year: '2025',
-    file: '/certificates/TASK.pdf'
+    file: '/certificates/TASK.pdf',
   },
   {
-  name: 'Magic Bus Youth Employability & Digital Skills Program',
-  provider: 'Magic Bus India Foundation – in collaboration with Infosys Springboard',
-  year: '2026',
-  file: '/certificates/Magic.pdf'
-},
+    name: 'Magic Bus Youth Employability & Digital Skills Program',
+    provider: 'Magic Bus India Foundation – in collaboration with Infosys Springboard',
+    year: '2026',
+    file: '/certificates/Magic.pdf',
+  },
   {
     name: 'GenAI Job Simulation Program',
     provider: 'Forage',
     year: '2025',
-    file: '/certificates/data analytics.pdf'
+    file: '/certificates/data analytics.pdf',
   },
   {
     name: 'Introduction to the Line Finder and Ultrasonic Sensor',
     provider: 'Infosys Springboard',
     year: '2025',
-    file: '/certificates/sensor.pdf'
+    file: '/certificates/sensor.pdf',
   },
   {
     name: 'Mini Challenge-Garbage Moving Robot',
     provider: 'Infosys Springboard',
     year: '2025',
-    file: '/certificates/mini.pdf'
-  }
-];
+    file: '/certificates/mini.pdf',
+  },
+]
+
 function App() {
   const [navOpen, setNavOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
@@ -238,15 +207,16 @@ function App() {
       <header className="topbar">
         <div className="topbar-inner">
           <a href="#home" className="brand-wrap" aria-label="Home">
-  <span className="brand-badge">
-    <img src="/profile.jpeg" alt="Rasika Wale" />
-  </span>
-  <span className="brand-text">RASIKA</span>
-</a>
+            <span className="brand-name">Rasika Wale</span>
+          </a>
 
-          <nav className="desktop-nav">
+          <nav className="desktop-nav" aria-label="Main navigation">
             {navigation.map((item) => (
-              <a key={item.href} href={item.href} className={`nav-link ${activeSection === item.href.replace('#', '') ? 'active' : ''}`}>
+              <a
+                key={item.href}
+                href={item.href}
+                className={`nav-link ${activeSection === item.href.replace('#', '') ? 'active' : ''}`}
+              >
                 {item.label}
               </a>
             ))}
@@ -256,7 +226,12 @@ function App() {
             <Mail size={12} />
           </a>
 
-          <button type="button" className="mobile-toggle" aria-label="Toggle menu" onClick={() => setNavOpen((open) => !open)}>
+          <button
+            type="button"
+            className="mobile-toggle"
+            aria-label="Toggle menu"
+            onClick={() => setNavOpen((open) => !open)}
+          >
             {navOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
@@ -264,7 +239,12 @@ function App() {
         {navOpen && (
           <div className="mobile-nav">
             {navigation.map((item) => (
-              <a key={item.href} href={item.href} className={`mobile-nav-link ${activeSection === item.href.replace('#', '') ? 'active' : ''}`} onClick={() => setNavOpen(false)}>
+              <a
+                key={item.href}
+                href={item.href}
+                className={`mobile-nav-link ${activeSection === item.href.replace('#', '') ? 'active' : ''}`}
+                onClick={() => setNavOpen(false)}
+              >
                 {item.label}
               </a>
             ))}
@@ -276,17 +256,40 @@ function App() {
         <section id="home" className="hero-section section-shell">
           <div className="hero-inner reveal">
             <div className="hero-copy">
-              <p className="eyebrow">software DEVELOPER</p>
-              <p className="eyebrow">AI / ML DEVELOPER</p>
-             
-              
-                  <h1>
-                <span>Rasika </span>
-               
-                <span>Arvind </span>
-                <span className="accent">Wale</span>
+              <p className="eyebrow">Hi, I&apos;m</p>
+              <h1>
+                <span className="name-line">Rasika Wale</span>
               </h1>
+              <div className="hero-title-wrap">
+                <p className="hero-title-line">
+                  <span className="hero-purple">Data Analyst |</span>
+                  <span className="hero-white"> Software Developer</span>
+                </p>
+              </div>
               <p className="subtitle">{profile.intro}</p>
+
+              <div className="hero-actions">
+                <a href="#projects" className="primary-btn">
+                  View My Work <span aria-hidden="true">→</span>
+                </a>
+                <a href={profile.resume} download className="secondary-btn">
+                  Download Resume <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="hero-visual" aria-label="Rasika Wale portrait and technology badges">
+              <div className="portrait-glow" />
+              <div className="portrait-orbit orbit-one" />
+              <div className="portrait-orbit orbit-two" />
+              <div className="portrait-frame">
+                <img src="/profile.jpeg" alt="Rasika Wale portrait" />
+              </div>
+
+              <div className="floating-badge badge-python">Python</div>
+              <div className="floating-badge badge-sql">SQL</div>
+              <div className="floating-badge badge-powerbi">Power BI</div>
+              <div className="floating-badge badge-laravel">Laravel</div>
             </div>
           </div>
         </section>
@@ -296,24 +299,22 @@ function App() {
             <SectionHeading eyebrow="About Me" title="Engineering solutions with curiosity and purpose." />
             <div className="reveal about-grid">
               <div className="panel">
-            <p>
-    I am an M.Sc. Computer Science student with a strong interest in
-    Data Analytics, Full-Stack Software Development, and emerging
-    technologies. I enjoy building practical, user-focused applications
-    and turning ideas into solutions for real-world problems.
-</p>
+                <p>
+                  I am an M.Sc. Computer Science student with a strong interest in Data Analytics,
+                  Full-Stack Software Development, and emerging technologies. I enjoy building practical,
+                  user-focused applications and turning ideas into solutions for real-world problems.
+                </p>
 
-<p>
-    My focus is on developing my skills in SQL, Excel, Power BI, Python,
-    and modern full-stack technologies while gaining hands-on experience
-    through projects. I am passionate about learning, building, and
-    continuously improving my technical skills.
-</p>
+                <p>
+                  My focus is on developing my skills in SQL, Excel, Power BI, Python, and modern
+                  full-stack technologies while gaining hands-on experience through projects. I am
+                  passionate about learning, building, and continuously improving my technical skills.
+                </p>
               </div>
 
               <div className="stats-grid">
                 <StatCard icon={GraduationCap} label="Current" value="Computer Science" />
-                <StatCard icon={BrainCircuit} label="Interests" value="AI, ML, Python,PHP,JAVA " />
+                <StatCard icon={BrainCircuit} label="Interests" value="AI, ML, Python, PHP, JAVA" />
                 <StatCard icon={Briefcase} label="Goal" value="Build products" />
               </div>
             </div>
@@ -322,22 +323,30 @@ function App() {
 
         <section id="skills" className="section-shell content-section">
           <div className="inner-section">
-            <SectionHeading eyebrow="Skills" title="Technologies I build with." />
-            <div className="reveal skill-grid">
-              {skillGroups.map((group) => {
-                const Icon = group.icon
-                return (
-                  <div key={group.title} className="skill-card">
-                    <div className="skill-header">
-                      <div className="skill-icon"><Icon size={20} /></div>
-                      <h3>{group.title}</h3>
-                    </div>
-                    <div className="chip-row">
-                      {group.items.map((item) => <span key={item} className="chip">{item}</span>)}
-                    </div>
+            <SectionHeading eyebrow="Skills" title="My technology universe." />
+            <div className="reveal skill-constellation-wrap">
+              <div className="skill-constellation" aria-label="Technology constellation">
+                {skillUniverse.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="skill-node"
+                    style={{ left: skill.x, top: skill.y }}
+                    title={skill.description}
+                  >
+                    <span>{skill.value}</span>
+                    <small>{skill.description}</small>
                   </div>
-                )
-              })}
+                ))}
+              </div>
+
+              <div className="skill-list-mobile reveal">
+                {skillUniverse.map((skill) => (
+                  <div key={skill.name} className="mobile-skill-item">
+                    <span>{skill.name}</span>
+                    <small>{skill.description}</small>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -355,11 +364,16 @@ function App() {
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                   <div className="chip-row">
-                    {project.tech.map((item) => <span key={item} className="chip">{item}</span>)}
+                    {project.tech.map((item) => (
+                      <span key={item} className="chip">
+                        {item}
+                      </span>
+                    ))}
                   </div>
                   <div className="project-actions">
-                    <a href={project.github} target="_blank" rel="noreferrer"><Globe size={16} /> GitHub</a>
-                    {/* <a href={project.demo} target="_blank" rel="noreferrer" className="primary"><ExternalLink size={16} /> Live Demo</a> */}
+                    <a href={project.github} target="_blank" rel="noreferrer">
+                      <Globe size={16} /> GitHub
+                    </a>
                   </div>
                 </article>
               ))}
@@ -398,7 +412,11 @@ function App() {
                     <span className="mini-badge">Relevant coursework</span>
                   </div>
                   <div className="chip-row">
-                    {item.coursework.map((course) => <span key={course} className="chip">{course}</span>)}
+                    {item.coursework.map((course) => (
+                      <span key={course} className="chip">
+                        {course}
+                      </span>
+                    ))}
                   </div>
                 </div>
               ))}
@@ -412,22 +430,20 @@ function App() {
             <div className="reveal cert-grid">
               {certifications.map((cert) => (
                 <a
-  key={cert.name}
-  href={cert.file}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cert-card"
->
-  <div className="cert-icon">
-    <Award size={20} />
-  </div>
-
-  <h3>{cert.name}</h3>
-  <p>{cert.provider}</p>
-  <span>{cert.year}</span>
-
-  <small>View Certificate →</small>
-</a>
+                  key={cert.name}
+                  href={cert.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cert-card"
+                >
+                  <div className="cert-icon">
+                    <Award size={20} />
+                  </div>
+                  <h3>{cert.name}</h3>
+                  <p>{cert.provider}</p>
+                  <span>{cert.year}</span>
+                  <small>View Certificate →</small>
+                </a>
               ))}
             </div>
           </div>
@@ -436,12 +452,18 @@ function App() {
         <section id="resume" className="section-shell content-section">
           <div className="inner-section">
             <div className="reveal resume-box panel">
-              <div className="resume-icon"><FileText size={28} /></div>
+              <div className="resume-icon">
+                <FileText size={28} />
+              </div>
               <h2>Download My Resume</h2>
               <p>A concise summary of my academic journey, skills, and project experience.</p>
               <div className="resume-actions">
-                <a href={profile.resumeViewer} target="_blank" rel="noreferrer" className="secondary-link"><FileText size={18} /> View Resume</a>
-                <a href={profile.resume} download className="primary-link"><Download size={18} /> Download Resume</a>
+                <a href={profile.resumeViewer} target="_blank" rel="noreferrer" className="secondary-link">
+                  <FileText size={18} /> View Resume
+                </a>
+                <a href={profile.resume} download className="primary-link">
+                  <Download size={18} /> Download Resume
+                </a>
               </div>
             </div>
           </div>
@@ -454,29 +476,30 @@ function App() {
               <div className="panel contact-card">
                 <h3>Get in touch</h3>
                 <div className="contact-list">
-                  <div><Mail size={18} /> <a href={`mailto:${profile.email}`}>{profile.email}</a></div>
-                  <div><BriefcaseBusiness size={18} /> <a href={profile.linkedin} target="_blank" rel="noreferrer">{profile.linkedin}</a></div>
-                  <div><Globe size={18} /> <a href={profile.github} target="_blank" rel="noreferrer">{profile.github}</a></div>
+                  <div>
+                    <Mail size={18} /> <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                  </div>
+                  <div>
+                    <BriefcaseBusiness size={18} />
+                    <a href={profile.linkedin} target="_blank" rel="noreferrer">
+                      {profile.linkedin}
+                    </a>
+                  </div>
+                  <div>
+                    <Globe size={18} />
+                    <a href={profile.github} target="_blank" rel="noreferrer">
+                      {profile.github}
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <form className="panel contact-form">
-                <div className="field-row">
-                  <label>
-                    Name
-                    <input type="text" placeholder="Your name" />
-                  </label>
-                  <label>
-                    Email
-                    <input type="email" placeholder="your@email.com" />
-                  </label>
-                </div>
-                <label>
-                  Message
-                  <textarea rows="6" placeholder="Write a brief message..." />
-                </label>
-                <button type="submit"><Send size={16} /> Send Message</button>
-              </form>
+              <div className="panel contact-card">
+                <h3>Let&apos;s connect</h3>
+                <p>
+                  I&apos;m open to internships, collaborations, and meaningful tech opportunities.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -486,8 +509,12 @@ function App() {
         <div className="footer-inner">
           <p>© 2026 Rasika Arvind Wale</p>
           <div className="footer-links">
-            <a href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href={profile.github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -510,7 +537,9 @@ function SectionHeading({ eyebrow, title }) {
 function StatCard({ icon: Icon, label, value }) {
   return (
     <div className="stat-card panel">
-      <div className="stat-icon"><Icon size={20} /></div>
+      <div className="stat-icon">
+        <Icon size={20} />
+      </div>
       <p className="stat-label">{label}</p>
       <p className="stat-value">{value}</p>
     </div>
